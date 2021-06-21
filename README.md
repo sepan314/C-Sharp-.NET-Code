@@ -1,6 +1,6 @@
 # C-Sharp-Project
 
-This project was to contribute to the development of a website for a Theatre Company. [google](google.com)
+This project was to contribute to the development of a website for a Theatre Company. [google](https://google.com)
 
 
 1.      One of my tasks was to create a page where the admin can publish blog posts for all users to see.
@@ -13,7 +13,7 @@ This project was to contribute to the development of a website for a Theatre Com
         - sorted by PublishedDate or LastSaveDate depending on user role
         - content can include images and database will preserve HTML styling
 
-        [Model code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/NewsModel.cs) [Controller code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/NewsController.cs) [Front End code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/NewsHTML.cshtml)
+[Model code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/NewsModel.cs) [Controller code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/NewsController.cs) [Front End code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/NewsHTML.cshtml)
 
 
 2.      Another of my tasks was to create a simple messaging system between admin and user.
@@ -23,7 +23,7 @@ This project was to contribute to the development of a website for a Theatre Com
         - tracks if a message is read or unread
         - compose/reply/delete message functions
         
-        [Model code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/MsgModel.cs) [Controller code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/MsgController.cs) [Front End code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/MsgHTML.cshtml)
+[Model code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/MsgModel.cs) [Controller code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/MsgController.cs) [Front End code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/MsgHTML.cshtml)
 
 
 3.      A third task was to add a calendar (FullCalendar) to one of the pages. 
@@ -31,4 +31,4 @@ This project was to contribute to the development of a website for a Theatre Com
         Some UI features:
         - selecting an event also highlights the production
         
-        [Front End code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/CalendarHTML.cshtml)
+[Front End code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/CalendarHTML.cshtml)
