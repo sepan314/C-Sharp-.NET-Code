@@ -1,62 +1,33 @@
-story6531 Theatre News 
-
 This project was to be contribute to the development of a website for a Theatre Company.
 
 
-One of my tasks to create a page where the admin can create informational posts.
-I created a model called News with various properties and its associated controller. 
-I used a Javascript library called Summernote as my text editor. 
-
-Some functions include: 
-- an admin can create a post consisting of a headline and some content
-- edit, hide from view, delete functions
-- a post can be saved (not shown to the viewer) or published (shown to the viewer) 
-- sorted by PublishedDate or LastSaveDate depending on user role
-- content can include images
-
--------------- 6531 original to do list -----------
-Create a new model called News, with properties NewsId, Headline, Content, CreateDate, LastSaveDate, PublishDate, EmailDate, Hidden (i.e. int, string, string, DateTime, DateTime, DateTime, DateTime, boolean).  Make sure all the DateTime properties are nullable.
-Generate a controller and scaffold CRUD pages for the model.  Please ensure that the scaffolded CRUD action methods in the controller are only accessible to admins.  You may leave the scaffolded view pages as is
-Install Summernote from the Nuget Package manager
-
-Your work will be primarily done on the Published page.  The goal for this page is to display all the published news postings (where also the Hidden boolean is false) for the public to see.  However, if the user is an admin then all news postings, published or not, should be visible (make sure to check this from the backend so that unpublished postings doe not get send to the front-end at all if the user is not an admin).
-Each news posting should display the headline, post date, and content.  The postings should be sorted by PublishDate with the newest on top, except for admins, in which case they should be sorted by LastSaveDate, with the newst on top.
-An admin should also be able to see the rest of the DateTime properties if they are not null.  
-If the PublishDate is null, the admin should see a bootstrap pill badge button "Publish", which when clicked will set the PublishDate to the current time.
-The admin should be able to hover over any headline or content and see a small edit icon, which when clicked should open the summernote editor to edit the text.  There should also be a way to save the changes to the database.  When saving, make sure to set LastSaveDate.
-Provide a button or link on the page for creating a new posting.  When clicked this should open a modal for the admin to input headline and content.  Also use summernote for this.  When saved, set the CreateDate and LastSaveDate to the current time
-Allow the admin to add links, images, and videos.  For images, keep in mind that we are using the Photo class to store image data.  So if the admin uploads an image, please utilize the Photo class for storing and displaying that image.
-The admin can be provided a delete icon for unpublished postings only.  For published postings the admin should instead be provided with a pill badge button to hide or unhide the posting from public view
-UI: Please stylize this page the best you can, to make it professional, stylish, and modern.  Don't forget that front-end design always must consider responsiveness, and also keep in mind our project color scheme and CSS variables.
-
--------------- 6531 original to do list -----------
+1.      One of my tasks to create a page where the admin can create blog posts for all users to see.
+        I created a model called News with various properties and its associated controller. 
+        I used a Javascript library called Summernote as my text editor. 
+        Some features include: 
+        - an admin can create a post consisting of a headline and some content
+        - edit, hide from view, delete functions
+        - a post can be saved (not shown to the viewer) or published (shown to the viewer) 
+        - sorted by PublishedDate or LastSaveDate depending on user role
+        - content can include images
 
 
-One of my tasks to add a calendar (FullCalendar) to one of the pages. 
-This calendar displays production events, filterable by search (of production names).
-Some UI features:
-- selecting an event also highlights the production
-
--------------- 6558 original to do list -----------
-Calendar:
-- Implement a mechanism next to the page title for displaying and hiding a calendar (e.g. button, link, toggle switch, etc.)
-- When the calendar is toggled on, display a medium-sized and responsive calendar that displays all calendar events for the productions that are currently displayed on the page.  (There is a search tool, and thus not all productions will be displayed at a given time).  We are using FullCalendar version 3 on this project
-- At the center of the calendar header allow both Month and Week views.  For now let's disable the all-day slot in the week view
-- The user should be able to click on an event from the calendar and the production it belongs to on the page should indicate that it's been selected.  You can indicate this either by changing the shade of background color for that production, or circle it with a border, or whatever you feel will look the best.  When selected, the calendar event itself should also change shade of color to indicate that it's been selected.  De-selecting the event (i.e. clicking again) should undo the effects.  Please pay attention to the possibility that a user may click on multiple events belonging to the same production.  A production's "highlighting" should disappear only when all related events on the calendar has been deselected.
-- Whether the calendar is visible or not, when the user executes a search, the page should retain the visibility state upon the return of results.
-- Stylize the calendar as best you can, keeping in mind our project color scheme.
--------------- 6558 original to do list -----------
+2.      Another of my tasks to create a simple messaging system between admin and user.
+        I created a model called Messages with various properties and its associated controller. 
+        Some features include:
+        - an inbox and a sent box
+        - shows if a message is read or unread
+        - compose/reply message and delete message functions
 
 
-One of my tasks to create a simple messaging system between admin and user.
-I created a model called Messages with various properties and its associated controller. 
-Some features include:
-- an inbox and a sent box
-- shows if a message is read or unread
-- compose message and delete message functions
 
--------------- 6673 original to do list -----------
-A mailbox with an in box, a sent box, and the ability to compose a new message
-The ability to distinguish and to be informed about unread messages
-An icon on the navbar that opens a menu for sending a message, or for opening the mailbox
--------------- 6673 original to do list -----------
+3.      A third task was to add a calendar (FullCalendar) to one of the pages. 
+        This calendar displays production events, filterable by search (of production names).
+        Some UI features:
+        - selecting an event also highlights the production
+
+
+
+
+
+

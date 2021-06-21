@@ -404,7 +404,7 @@ else
     });
 
 
-    //delete: deletes the post upon clicking the delete badge by posting a request to /news/delete/NewsId
+    //delete: deletes the post upon clicking the delete badge by posting a request to / news / delete /NewsId
     $(document).ready(function () {
         $(".news-delete").on('click', function () {
             if (confirm("Are you sure you want to delete this post?")) {
@@ -425,7 +425,7 @@ else
                 });
             };
         });
-    })
+    });
 
     //publish: update post's PublishDate from null to Now by httpPost to 'news/edit/NewsId'
     $(document).ready(function () {
