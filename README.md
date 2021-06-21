@@ -13,6 +13,8 @@ This project was to contribute to the development of a website for a Theatre Com
         - sorted by PublishedDate or LastSaveDate depending on user role
         - content can include images and database will preserve HTML styling
 
+        [Model code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/NewsModel.cs) [Controller code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/NewsController.cs) [Front End code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/NewsHTML.cshtml)
+
 
 2.      Another of my tasks was to create a simple messaging system between admin and user.
         I created a model called Messages with various properties and its associated controller. 
@@ -20,10 +22,13 @@ This project was to contribute to the development of a website for a Theatre Com
         - an inbox and a sent box
         - tracks if a message is read or unread
         - compose/reply/delete message functions
-
+        
+        [Model code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/MsgModel.cs) [Controller code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/MsgController.cs) [Front End code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/MsgHTML.cshtml)
 
 
 3.      A third task was to add a calendar (FullCalendar) to one of the pages. 
         This calendar displays production events, filterable by search (of production names).
         Some UI features:
         - selecting an event also highlights the production
+        
+        [Front End code](https://github.com/sepan314/C-Sharp-.NET-Code/blob/master/CalendarHTML.cshtml)
